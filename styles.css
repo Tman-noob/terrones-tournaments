@@ -31,17 +31,20 @@ h3 {
 }
 
 h1 {
-    margin: 1em;
+    font-size: 1.9rem;
+    margin-bottom: 1em;
 }
 
 h2 {
     margin-top: 1em;
+    margin-bottom: 1em;
     padding-top: 1em;
 }
 
 p {
     text-align: justify;
     max-width: 60em;
+    font-size: 1.2rem;
 }
 
 #details-content {
