@@ -1,0 +1,21 @@
+@media screen and (min-width: 856px) {
+    #details-div {
+        display: flex;
+        justify-content: space-between; /* Even spacing between items */
+        align-items: flex-start; /* Align the top of the items */
+        gap: 10px;
+    }
+
+    #details-div img {
+        flex: 1; /* Allow the image to grow equally with the content */
+        max-width: 600px; /* Prevent it from exceeding 600px */
+        min-width: 300px; /* Prevent it from becoming too small */
+    }
+
+    #details-content {
+        flex: 1; /* Match the image's size */
+        max-width: 600px; /* Consistent size with the image */
+        width: 100%;
+        min-width: 300px; /* Prevent it from becoming too small */
+    }
+}

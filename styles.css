@@ -37,10 +37,17 @@ main {
     max-width: 1280px; */
 }
 
+#logo img {
+    max-width: 600px;
+}
+
 #logo img,
 #details img {
     width: 100%;
-    max-width: 600px;
+}
+
+#details img {
+    border-radius: 8px;
 }
 
 h1 {
@@ -62,7 +69,7 @@ h2 {
 }
 
 p {
-    text-align: justify;
+    text-align: left;
     max-width: 60em;
     font-size: 1.2rem;
 }
@@ -119,7 +126,19 @@ a {
 #team-players {
     width: 13em;
     height: 5em;
+    color: #302f2f;
 }
+
+#team-players:focus,
+#team-name:focus,
+#team-email:focus,
+#team-phone:focus {
+    color: #302f2f;
+}
+
+/* #team-players input, select, textarea {
+    color: #302f2f;
+} */
 
 #form-div {
     padding-top: 1em;
@@ -141,7 +160,45 @@ a {
     text-shadow: 2px 3px 5px rgba(0,0,0,0.51);
 }
 
-#contact-form {
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #4c4a4e;
+    margin-top: 3em;
+    padding: 40px 5px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    color: #faf5f5;
+    font-weight: 600;
+    -webkit-box-shadow: 0px 0px 60px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 60px 3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 60px 3px rgba(0,0,0,0.75);
+       
+} 
+
+#contact h2 {
+    margin: 0;
+    padding-top: .0;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.51);
+}
+
+#contact h2,
+#contact p {
+    padding: 0 1em;
+    text-align: center;
+}
+
+#line {
+    background-color: #8b8b8a;
+    width: 90%;
+    height: 3px;
+    border-radius: 5px;
+    margin-bottom: 1em;
+}
+
+/* #contact-form {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -155,23 +212,44 @@ a {
     -webkit-box-shadow: 6px 6px 22px -8px rgba(0,0,0,0.75);
     -moz-box-shadow: 6px 6px 22px -8px rgba(0,0,0,0.75);
     box-shadow: 6px 6px 22px -8px rgba(0,0,0,0.75);
-
-}
+} */
 
 #contact-form input {
+    font-size: 1.2rem;
     padding: 5px;
     border-radius: 5px;
+    border: 2px solid ;
     border: 2px solid #797574;
     background-color: #4c4a4e;
+    color: #faf5f5;
+    font-family: "Inter Tight";
 }
 
 #contact-form textarea {
+    font-size: 1.2rem;
     width: 13em;
     height: 6em;
     border-radius: 5px;
     border: 2px solid #797574;
     background-color: #4c4a4e;
+    color: #faf5f5;
+    font-family: "Inter Tight";
 }
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    color: #faf5f5;
+    font-size: 1.2rem;
+    background-color: #797574;
+    outline: none;
+    font-family: "Inter Tight";
+}
+
+/* #message input, select, textarea {
+    color: #faf5f5;
+    font-family: "Inter Tight";
+
+} */
 
 #contact-form button {
     background-color: #757575;
@@ -187,4 +265,9 @@ a {
     margin-top: 5px;
     box-shadow: 0 1px 10px 0 rgba(0,0,0,0.24),0 10px 50px 0 rgba(0,0,0,0.19);
     text-shadow: 2px 3px 5px rgba(0,0,0,0.51);
+}
+
+#contact-form button:focus,
+#form-div button:focus {
+    outline: none;
 }
