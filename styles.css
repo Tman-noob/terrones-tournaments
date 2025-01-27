@@ -35,6 +35,10 @@ main {
     font-family: "Inter Tight";
 }
 
+#main-p {
+    line-height: 2;
+}
+
 #logo img,
 #details img  {
     max-width: 600px;
