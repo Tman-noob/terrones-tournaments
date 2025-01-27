@@ -10,7 +10,7 @@ body {
 }
 
 header {
-    /* background-color: #263d36; */
+    background-color: #263d36;
     background-image: url("background.svg");
     background-position: center top;
     background-repeat: no-repeat;
@@ -18,7 +18,13 @@ header {
     line-height: 1.2;
     padding: 10vw 2em;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
 }
+
 
 main {
     margin: 0 auto;
@@ -29,15 +35,8 @@ main {
     font-family: "Inter Tight";
 }
 
-.default {
-    /* padding: 0 10px;
-    margin: auto;
-    position: relative;
-    width: 100%;
-    max-width: 1280px; */
-}
-
-#logo img {
+#logo img,
+#details img  {
     max-width: 600px;
 }
 
@@ -102,7 +101,6 @@ a {
 #details,
 #form,
 #contact {
-    /* padding-top: 1rem; */
     padding-bottom: 2rem;
 }
 
@@ -161,6 +159,8 @@ a {
 }
 
 #contact {
+    max-width: 60em;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -180,7 +180,7 @@ a {
 
 #contact h2 {
     margin: 0;
-    padding-top: .0;
+    padding-top: 0;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.51);
 }
 
@@ -197,22 +197,6 @@ a {
     border-radius: 5px;
     margin-bottom: 1em;
 }
-
-/* #contact-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    background-color: #4c4a4e;
-    padding: 40px 5px;
-    border-radius: 10px;
-    font-size: 1.2rem;
-    color: #faf5f5;
-    font-weight: 600;
-    -webkit-box-shadow: 6px 6px 22px -8px rgba(0,0,0,0.75);
-    -moz-box-shadow: 6px 6px 22px -8px rgba(0,0,0,0.75);
-    box-shadow: 6px 6px 22px -8px rgba(0,0,0,0.75);
-} */
 
 #contact-form input {
     font-size: 1.2rem;
@@ -240,16 +224,15 @@ a {
 #contact-form textarea:focus {
     color: #faf5f5;
     font-size: 1.2rem;
-    background-color: #797574;
+    background-color: #5e5d5f;
     outline: none;
     font-family: "Inter Tight";
 }
 
-/* #message input, select, textarea {
-    color: #faf5f5;
-    font-family: "Inter Tight";
-
-} */
+#contact-form input::placeholder,
+#contact-form textarea::placeholder{
+    color: #a3a3a3;
+}
 
 #contact-form button {
     background-color: #757575;

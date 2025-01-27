@@ -1,4 +1,22 @@
 @media screen and (min-width: 856px) {
+    header {
+        padding: 5vw 2em; /* Reduce top and bottom padding */
+        height: 80vh; /* Make the header less tall */
+    }
+
+    header h1 {
+        font-size: 3rem; /* Larger font size for bigger screens */
+    }
+
+    h2 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
     #details-div {
         display: flex;
         justify-content: space-between; /* Even spacing between items */
@@ -17,5 +35,68 @@
         max-width: 600px; /* Consistent size with the image */
         width: 100%;
         min-width: 300px; /* Prevent it from becoming too small */
+    }
+
+    #form p {
+        text-align: center;
+        max-width: 40em;
+        margin: 0 auto;
+        margin-bottom: 2em;
+    }
+
+    #team-name,
+    #team-email,
+    #team-phone,
+    #team-players {
+        font-size: 1.5rem;
+        padding: 10px;
+    }
+
+    #team-players {
+        width: 13em;
+        height: 5em;
+    }
+    #form-div button {
+        padding: 12px 70px;
+        font-size: 1.5em;
+    }
+
+    #contact {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 5px;
+    }
+
+    #contact-content {
+        text-align: left;
+        max-width: 350px;
+    }
+
+    #line {
+        width: 3px;
+        height: 45vh; 
+        margin: 0 50px;
+    }
+
+    #contact-form {
+        font-size: 1.4rem;
+    }
+
+    #contact-form input {
+        font-size: 1.4rem;
+    }
+    #contact-form textarea {
+        font-size: 1.4rem;
+    }
+
+    #contact-form input:focus,
+    #contact-form textarea:focus {
+        font-size: 1.4rem;
+    }
+
+    #contact-form button {
+        padding: 10px 40px;
+        font-size: 1.1em;
     }
 }
