@@ -2,7 +2,7 @@
 
 
 body {
-    background-image: url("/images/background.svg");
+    background-image: url("background.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -29,7 +29,7 @@ body {
 }
 
 img {
-    max-width: 275px; /* Adjust logo size */
+    width: 300px; /* Adjust logo size */
     height: auto;
 }
 
